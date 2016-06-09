@@ -21,8 +21,18 @@ tutorials = [
 Link to car control section of my first video, teaching you basic drills on backwards and sideways aerials:
 https://youtu.be/X33xK-rMUYg?t=4m50s", author: "Kevpert", link: "https://www.youtube.com/watch?v=eAO1sqr135c"}
 ]
-#,
- # {title: "", description: "", author: "", link: ""}
-#]
 
+types = [
+  {name: "Aerials", description: ""},
+  {name: "Dribbling", description: ""},
+  {name: "Shooting", description: ""},
+  {name: "Goal-keeping", description: ""},
+  {name: "Defending", description: ""},
+  {name: "Attacking", description: ""},
+  {name: "Miscellaneous", description: ""},
+  {name: "Strategy", description: ""},
+  {name: "Wall-play", description: ""}
+] 
+ 
+types.each {|t| Type.find_or_create_by(t)}
 tutorials.each  {|t| Tutorial.find_or_create_by(t)}
