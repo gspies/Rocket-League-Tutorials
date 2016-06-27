@@ -5,11 +5,14 @@ class TypesController < ApplicationController
   # GET /types.json
   def index
     @types = Type.all
+    render json: @types
   end
 
   # GET /types/1
   # GET /types/1.json
   def show
+    @type= Type.find params[:id]
+    render json: @type
   end
 
   # GET /types/new
