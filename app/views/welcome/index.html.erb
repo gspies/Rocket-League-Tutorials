@@ -3,14 +3,14 @@
   <body>
     <form>
       Tutorial Type:
-      <select id="tutorial">
-        <option value=''>Select</option>
+      <select id="type">
+        <%= options_from_collection_for_select(Type.all, :id, :name) %>
       </select>
       Difficulty:
       <select id="difficulty">
-        <option value=''>Select</option>
+        <%= options_from_collection_for_select(Difficulty.all, :id, :name) %>
       </select>
     </form>
   </body>
-  <ul class="screencasts"/>
+  <ul class="type"></ul>
 </div>

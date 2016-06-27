@@ -22,7 +22,9 @@ Link to car control section of my first video, teaching you basic drills on back
 https://youtu.be/X33xK-rMUYg?t=4m50s", author: "Kevpert", link: "https://www.youtube.com/watch?v=eAO1sqr135c"}
 ]
 
+<<<<<<< HEAD
 types = [
+>>>>>>> add-dropdown-menu
   {name: "Aerials", description: ""},
   {name: "Dribbling", description: ""},
   {name: "Shooting", description: ""},
