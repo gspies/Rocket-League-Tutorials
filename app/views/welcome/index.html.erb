@@ -4,7 +4,7 @@
     <form>
       Tutorial Type:
       <select id="type">
-        <%= options_from_collection_for_select(Type.all, :id, :name) %>
+        <%=  options_from_collection_for_select(Type.all, :id, :name) %>
       </select>
       Difficulty:
       <select id="difficulty">

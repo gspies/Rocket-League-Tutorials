@@ -22,9 +22,7 @@ Link to car control section of my first video, teaching you basic drills on back
 https://youtu.be/X33xK-rMUYg?t=4m50s", author: "Kevpert", link: "https://www.youtube.com/watch?v=eAO1sqr135c"}
 ]
 
-<<<<<<< HEAD
 types = [
->>>>>>> add-dropdown-menu
   {name: "Aerials", description: ""},
   {name: "Dribbling", description: ""},
   {name: "Shooting", description: ""},
@@ -35,6 +33,13 @@ types = [
   {name: "Strategy", description: ""},
   {name: "Wall-play", description: ""}
 ] 
+
+difficulties = [
+  {name: "Beginner"},
+  {name: "Intermediate"},
+  {name: "Advanced"}
+]
  
 types.each {|t| Type.find_or_create_by(t)}
 tutorials.each  {|t| Tutorial.find_or_create_by(t)}
+difficulties.each {|d| Difficulty.find_or_create_by(d)}

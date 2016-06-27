@@ -41,7 +41,7 @@ $(document).ready(function(){
       this.template = _.template($("#type").html());
     },*/
     render: function(){
-      return $(this.'el').text(this.model.get('name'));  
+      return $(this.el).text(this.model.get('name'));  
 
       //this.$el.html(this.template(this.model.attributes));
       //$(this.el).attr('value',
@@ -51,7 +51,7 @@ $(document).ready(function(){
  });
   
   var TypesView = Backbone.View.extend({
-    model: TypesCollection,
+    //model: TypesCollection,
 
     initialize: function(){
       _.bindAll(this, 'addOne', 'addAll');
@@ -78,7 +78,7 @@ $(document).ready(function(){
     },*/
   });
   //var types = new Types();
-  new TypesView({el: $("#type"), collection: types});
+  //new TypesView({el: $("#type"), collection: types});
   //types.fetch({
     //}); 
 });

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :difficulties
   resources :types
   resources :tutorials
 
