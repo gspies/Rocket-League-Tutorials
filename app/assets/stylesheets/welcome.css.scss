@@ -2,4 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #app {
+  ul.screencasts {
+    li {
+      padding: .5cm;
+      font-size: 25px;
+      color: red;
+      border-bottom: 1px solid #ccc
+    }
+  }
 }

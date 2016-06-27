@@ -25,4 +25,17 @@ https://youtu.be/X33xK-rMUYg?t=4m50s", author: "Kevpert", link: "https://www.you
  # {title: "", description: "", author: "", link: ""}
 #]
 
+types =  [
+  {name: "Aerials", description: ""},
+  {name: "Dribbling", description: ""},
+  {name: "Shooting", description: ""},
+  {name: "Goal-keeping", description: ""},
+  {name: "Defending", description: ""},
+  {name: "Attacking", description: ""},
+  {name: "Miscellaneous", description: ""},
+  {name: "Strategy", description: ""},
+  {name: "Wall-play", description: ""}
+] 
+ 
+types.each {|t| Type.find_or_create_by(t)}
 tutorials.each  {|t| Tutorial.find_or_create_by(t)}
